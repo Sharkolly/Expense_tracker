@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expenseTracker.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Expense Tracker</h1>
+        <p class="new-item">Add a new item:</p>
+      </div>
+
+      <div class="input-section">
+        <div class="center">
+          <div class="top">
+            <label for="name" class="">Expenses Name:</label>
+            <input
+              type="text"
+              class="name"
+              value=""
+              placeholder="Where was the expense made?"
+            />
+          </div>
+          <div class="dates">
+            <div class="datess">
+                <label for="name" class="">Date:</label>
+                <input type="date" class="date" value="" />
+            </div>
+            <div class="amount">
+                <label for="name" class="amounts">Amount:</label>
+                <input type="number" class="amountt" value="" />
+            </div>
+          </div>
+          <div class="btn">
+            <button>Add Expense</button>
+          </div>
+          <h2>Incomplete Form</h2>
+        </div>
+      </div>
+
+      <table>
+        <tr class="tr">
+          <th class="th">Name</th>
+          <th class="th">Date</th>
+          <th class="th">Amount</th>
+        </tr>
+
+        <tr class="secTr">
+          <td colspan="3">No expenses added yet</td>
+        </tr>
+      </table>
+    </div>
+    <script src="expenseTracker.js"></script>
+  </body>
+</html>
